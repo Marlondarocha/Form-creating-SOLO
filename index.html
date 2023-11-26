@@ -13,60 +13,67 @@
     <p>Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</p> 
     <form action="post">
         <!-- primeira parte, campos de preenchimentos -->
-        <fieldset id="prch">
-            <label for="nnome">Nome <input type="text" name="anome" id="nnome" placeholder="Digite seu nome" required></label>
-            <label for="eemail">E-mail <input type="email" name="aemail" id="eemail"  placeholder="Digite seu e-mail" required></label>
-            <label for="iidade">Idade (opcional) <input type="number" name="aidade" id="iidade" placeholder="Digite sua idade"></label>
+        <fieldset>
+            <label for="nnome">Nome</label>
+            <input type="text" name="aname" id="nnome" placeholder="Digite seu nome" required>
+            <label for="eemail">E-mail</label>
+            <input type="eemail" name="aemail" id="eemail" placeholder="Digite seu e-mail" required>
+            <label for="iidade">Idade <span class="tam">(opcional)</span></label>
+            <input type="number" name="aidade" id="iidade" placeholder="Idade">
         </fieldset>
         <!-- opções de selecionar(FUNÇÃO) -->
-        <label for="eescolha">Qual opção melhor descreve sua função atual?
-            <select id="eescolha">
-                    <option disabled selected value>Selecione a função atual</option>
-                    <option value="1">Estudante</option>
-                    <option value="2">Trabalho em tempo integral</option>
-                    <option value="3">Aluno em tempo integral</option>
-                    <option value="4">Prefiro não dizer</option>
-                    <option value="5">Outro</option>
-            </select>
-        </label>
+        <fieldset>
+            <label for="eescolha">Qual opção melhor descreve sua função atual?
+                <select id="eescolha">
+                        <option disabled selected value>Selecione a função atual</option>
+                        <option value="1">Estudante</option>
+                        <option value="2">Trabalho em tempo integral</option>
+                        <option value="3">Aluno em tempo integral</option>
+                        <option value="4">Prefiro não dizer</option>
+                        <option value="5">Outro</option>
+                </select>
+            </label>
+        </fieldset>
         <!-- caixas de marcação de uma escolha -->
         <fieldset>
             <legend>Você recomendaria o freeCodeCamp a um amigo?</legend>
-            <label for="adef"><input type="radio" name="alters" id="adef" required checked> Definitivamente</label>
-            <label for="atal"><input type="radio" name="alters" id="atal" > Talvez</label>
-            <label for="antc"><input type="radio" name="alters" id="antc"> Não tenho certeza</label>
+            <label for="adef"><input type="radio" name="alters" id="adef" class="botao" required checked> Definitivamente</label>
+            <label for="atal"><input type="radio" name="alters" id="atal" class="botao"> Talvez</label>
+            <label for="antc"><input type="radio" name="alters" id="antc" class="botao"> Não tenho certeza</label>
         </fieldset>
         <!-- opções de selecionar(RECURSO) -->
-        <label for="eescolha">Qual é o seu recurso favorito do freeCodeCamp?
-            <select name="2o" id="eescolha">
-                <option disabled selected value>Selecione uma opção</option>  
-                <option value="1">Desafios</option>
-                <option value="2">Projetos</optio>
-                <option value="3">Comunidade</option>
-                <option value="4">Código aberto</option> 
-            </select>
-        </label>
+        <fieldset>
+            <label for="eescolha">Qual é o seu recurso favorito do freeCodeCamp?
+                <select name="2o" id="eescolha">
+                    <option disabled selected value>Selecione uma opção</option>
+                    <option value="1">Desafios</option>
+                    <option value="2">Projetos</optio>
+                    <option value="3">Comunidade</option>
+                    <option value="4">Código aberto</option>
+                </select>
+            </label>
+        </fieldset>
         <!-- caixas de marcação de várias escolhas (checkbox) -->
         <fieldset>
-            <legend>O que você gostaria de ver melhorado? (Marque todas as opções aplicáveis)</legend>
-            <label for="ipfe"><input type="checkbox" name="pfe" id="ipfe"> Projetos front-end</label>
-            <label for="ipbe"><input type="checkbox" name="pbe" id="ipbe"> Projetos e back-end</label>
-            <label for="ivd"><input type="checkbox" name="vd" id="ivd"> Vizualização de dados</label>
-            <label for="idf"><input type="checkbox" name="df" id="idf"> Desafios</label>
-            <label for="icda"><input type="checkbox" name="cda" id="icda"> Comunidade de código aberto</label>
-            <label for="isag"><input type="checkbox" name="sag" id="isag"> Salas de ajuda do Gitter</label>
-            <label for="ivds"><input type="checkbox" name="vds" id="ivds"> Vídeos</label>
-            <label for="iec"><input type="checkbox" name="ec" id="iec"> Encontros na cidade</label>
-            <label for="iwkp"><input type="checkbox" name="wkp" id="iwkp"> Wikipédia</label>
-            <label for="iforum"><input type="checkbox" name="forum" id="iforum"> Fórum</label>
-            <label for="ica"><input type="checkbox" name="ca" id="ica"> Cursos adicionais</label>
+            <legend>O que você gostaria de ver melhorado? <span class="tam">(Marque todas as opções aplicáveis)</span></legend>
+            <label for="ipfe"><input type="checkbox" name="pfe" id="ipfe" class="botao"> Projetos front-end</label>
+            <label for="ipbe"><input type="checkbox" name="pbe" id="ipbe" class="botao"> Projetos e back-end</label>
+            <label for="ivd"><input type="checkbox" name="vd" id="ivd" class="botao"> Vizualização de dados</label>
+            <label for="idf"><input type="checkbox" name="df" id="idf" class="botao"> Desafios</label>
+            <label for="icda"><input type="checkbox" name="cda" id="icda" class="botao"> Comunidade de código aberto</label>
+            <label for="isag"><input type="checkbox" name="sag" id="isag" class="botao"> Salas de ajuda do Gitter</label>
+            <label for="ivds"><input type="checkbox" name="vds" id="ivds" class="botao"> Vídeos</label>
+            <label for="iec"><input type="checkbox" name="ec" id="iec" class="botao"> Encontros na cidade</label>
+            <label for="iwkp"><input type="checkbox" name="wkp" id="iwkp" class="botao"> Wikipédia</label>
+            <label for="iforum"><input type="checkbox" name="forum" id="iforum" class="botao"> Fórum</label>
+            <label for="ica"><input type="checkbox" name="ca" id="ica" class="botao"> Cursos adicionais</label>
         </fieldset>
         <!-- caixa de biografia -->
         <fieldset>
-            <label for="bio">Algum comentário ou sugestão?<textarea name="biogrf" id="bio" cols="30" rows="3" placeholder="Digite seu comentário aqui..."></textarea></label>
+            <label for="bio">Algum comentário ou sugestão?<textarea name="biogrf" id="bio" cols="30" rows="5" placeholder="Digite seu comentário aqui..."></textarea></label>
         </fieldset>
+        <!-- botão para enviar o formulário -->
+        <input type="submit" value="Enviar" id="botao-envio">
     </form>
-    <!-- botão para enviar o formulário -->
-    <input type="submit" value="Enviar" id="botao">
 </body>
 </html>
